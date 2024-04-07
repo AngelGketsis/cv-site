@@ -19,7 +19,7 @@ window.onscroll = () => {
         let height = sec.offsetHeight;
         let id = sec.getAttribute('id');
 
-        if(top >= offset && top < offset + height) {
+        if (top >= offset && top < offset + height) {
             navLinks.forEach(links => {
                 links.classList.remove('active');
                 document.querySelector('header nav a[href*=' + id + ']').classList.add('active');
@@ -28,15 +28,15 @@ window.onscroll = () => {
     });
 
 
-/*========== sticky navbar ==========*/
-let header = document.querySelector('.header');
+    /*========== sticky navbar ==========*/
+    let header = document.querySelector('.header');
 
-header.classList.toggle('sticky', window.scrollY > 100);
+    header.classList.toggle('sticky', window.scrollY > 100);
 
 
-/*========== remove menu icon navbar when click navbar link (scroll) ==========*/
-menuIcon.classList.remove('bx-x');
-navbar.classList.remove('active');
+    /*========== remove menu icon navbar when click navbar link (scroll) ==========*/
+    menuIcon.classList.remove('bx-x');
+    navbar.classList.remove('active');
 
 };
 
@@ -48,22 +48,27 @@ var swiper = new Swiper(".mySwiper", {
     loop: true,
     grabCursor: true,
     pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
+        el: ".swiper-pagination",
+        clickable: true,
     },
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
     },
 });
 
 
 /*========== dark light mode ==========*/
-let darkModeIcon = document.querySelector('#darkMode-icon');
+let lightModeIcon = document.querySelector('#lightMode-icon');
+let body = document.body;
 
-darkModeIcon.onclick = () => {
-    darkModeIcon.classList.toggle('bx-sun');
-    document.body.classList.toggle('dark-mode');
+// Initially set the dark mode classes
+lightModeIcon.classList.add('bx-moon');
+
+lightModeIcon.onclick = () => {
+    // Toggle dark mode classes
+    lightModeIcon.classList.toggle('bx-sun');
+    body.classList.toggle('light-mode');
 };
 
 

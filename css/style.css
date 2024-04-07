@@ -12,11 +12,17 @@
 }
 
 :root {
-    --bg-color: #fdfdfd;
-    --text-color: #333;
-    --main-color: #754ef9;
+    /*--bg-color: #ffffff;*/
+    --bg-color: #0b061f;
+
+    /*--text-color: #333;*/
+    --text-color: #fdfdfd;
+
+    --main-color: #af4ef9;
     --white-color: #fdfdfd;
-    --shadow-color: rgba(0, 0, 0, .2);
+
+    /*--shadow-color: rgba(0, 0, 0, .2);*/
+    --shadow-color: rgba(0, 0, 0, .7);
 }
 
 *::selection {
@@ -24,10 +30,10 @@
     color: var(--bg-color);
 }
 
-.dark-mode {
-    --bg-color: #0b061f;
-    --text-color: #fdfdfd;
-    --shadow-color: rgba(0, 0, 0, .7);
+.light-mode {
+    --bg-color: #ffffff;
+    --text-color: #333;
+    --shadow-color: rgba(0, 0, 0, .2);
 }
 
 html {
@@ -96,13 +102,13 @@ body {
     opacity: .7;
 }
 
-#darkMode-icon {
+#lightMode-icon {
     font-size: 2.4rem;
     color: var(--white-color);
     cursor: pointer;
 }
 
-.header.sticky #darkMode-icon {
+.header.sticky #lightMode-icon {
     color: var(--text-color);
     opacity: .9;
 }
@@ -248,7 +254,19 @@ section {
 }
 
 .home .profession-box .profession:nth-child(1) i {
-    margin-right: 15px;
+    margin-right: 100px;
+}
+
+.home .profession-box .profession:nth-child(2) i {
+    margin-right: 35px;
+}
+
+.home .profession-box .profession:nth-child(3) i {
+    margin-right: 50px;
+}
+
+.home .profession-box .profession:nth-child(4) i {
+    margin-right: 75px;
 }
 
 .home .profession-box .profession:nth-child(2),
