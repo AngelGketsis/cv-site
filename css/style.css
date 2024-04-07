@@ -391,7 +391,16 @@ span {
     transition: .5s ease;
 }
 
+.services-box h4 {
+    font-size: 2.0rem;
+    transition: .5s ease;
+}
+
 .services-box:hover h3 {
+    color: var(--main-color);
+}
+
+.services-box:hover h4 {
     color: var(--main-color);
 }
 
