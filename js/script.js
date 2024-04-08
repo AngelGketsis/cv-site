@@ -81,6 +81,36 @@ ScrollReveal({
 });
 
 ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
-ScrollReveal().reveal('.home-img img, .services-container, .portfolio-box, .testimonial-wrapper, .contact form', { origin: 'bottom' });
+ScrollReveal().reveal('.home-img img, .experience-container, .portfolio-box, .testimonial-wrapper, .contact form', { origin: 'bottom' });
 ScrollReveal().reveal('.home-content h1, .about-img img', { origin: 'left' });
 ScrollReveal().reveal('.home-content h3, .home-content p, .about-content', { origin: 'right' });
+
+
+
+const expItem = document.querySelector(".experience-container");
+const popup = document.querySelector(".popup-box");
+const popupCloseButton = popup.querySelector(".btn");
+
+expItem.addEventListener("click", function (event) {
+    if (event.target.tagName.toLowerCase() == "button") {
+        const exp = event.target.parentElement;
+        const h3 = exp.querySelector("h3").innerHTML;
+        const readMoreCont = exp.querySelector(".read-more-content").innerHTML;
+
+        popup.querySelector("h3").innerHTML = h3;
+        popup.querySelector(".popup-body").innerHTML = readMoreCont;
+        popupBox();
+    }
+})
+
+popupCloseButton.addEventListener("click", popupBox);
+
+popup.addEventListener("click", function (evert) {
+    if (event.target == popup) {
+        popupBox();
+    }
+})
+
+function popupBox() {
+    popup.classList.toggle("open");
+}

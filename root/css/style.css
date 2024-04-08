@@ -347,16 +347,16 @@ span {
     margin: 2rem 0 3rem;
 }
 
-.services {
+.experience {
     min-height: auto;
     padding-bottom: 10rem;
 }
 
-.services h2 {
+.experience h2 {
     margin-bottom: 5rem;
 }
 
-.services .services-container {
+.experience .experience-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -364,7 +364,7 @@ span {
     gap: 2rem;
 }
 
-.services-container .services-box {
+.experience-container .experience-box {
     flex: 1 1 30rem;
     background: var(--bg-color);
     padding: 3rem 2rem 4rem;
@@ -376,26 +376,26 @@ span {
     transition: .5s ease;
 }
 
-.services-container .services-box:hover {
+.experience-container .experience-box:hover {
     box-shadow: 0 .1rem 2rem var(--shadow-color);
     transform: scale(1.02);
 }
 
-.services-box i {
+.experience-box i {
     font-size: 7rem;
     color: var(--main-color);
 }
 
-.services-box h3 {
+.experience-box h3 {
     font-size: 2.6rem;
     transition: .5s ease;
 }
 
-.services-box:hover h3 {
+.experience-box:hover h3 {
     color: var(--main-color);
 }
 
-.services-box p {
+.experience-box p {
     font-size: 1.6rem;
     margin: 1rem 0 3rem;
 }
