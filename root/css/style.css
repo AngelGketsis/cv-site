@@ -12,16 +12,10 @@
 }
 
 :root {
-    /*--bg-color: #ffffff;*/
     --bg-color: #0b061f;
-
-    /*--text-color: #333;*/
     --text-color: #fdfdfd;
-
     --main-color: #af4ef9;
     --white-color: #fdfdfd;
-
-    /*--shadow-color: rgba(0, 0, 0, .2);*/
     --shadow-color: rgba(0, 0, 0, .7);
 }
 
@@ -477,6 +471,11 @@ span {
 }
 
 .popup-box .popup-content p {
+    font-size: 1.6rem;
+    margin: 1rem 0 3rem;
+}
+
+.popup-box .popup-content li {
     font-size: 1.6rem;
     margin: 1rem 0 3rem;
 }
