@@ -333,6 +333,18 @@ span {
     text-align: center;
 }
 
+.about-content-lists{
+    display: flex;
+}
+
+.about-content-lists .list{
+    width: 50%;
+    
+    padding: 10px;
+    margin: 0;
+    list-style: none;
+}
+
 .about-content h2 {
     text-align: left;
     line-height: 1.2;
@@ -343,8 +355,18 @@ span {
 }
 
 .about-content p {
-    font-size: 1.6rem;
+    font-size: 1.9rem;
     margin: 2rem 0 3rem;
+}
+
+.about-content ul{
+    font-size: 1.7rem;
+    margin: 2rem 0 3rem;
+}
+
+.presentations{
+    font-size: 3.5rem;
+    text-align: center;
 }
 
 .experience {
