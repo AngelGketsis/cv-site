@@ -430,8 +430,10 @@ ul{
 
 .popup-box{
     position: fixed;
-    height: 100%;
-    width: 100%;
+    z-index: 9999; /* Sit on top */
+    overflow: auto; /* Enable scroll if needed */
+    width: 100vw;
+    height: 100vh;
     left: 0;
     top: 0;
     background-color: rgba(0, 0, 0, .5);
@@ -456,7 +458,7 @@ ul{
     border-bottom: .6rem solid var(--main-color);
     transition: .5s ease;
     background-color: #0b061f;
-    width: 600px;
+    width: 95vw;
     position: absolute;
     left: 50%;
     top: 50%;
